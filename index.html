@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Cá Nhân - Nguyễn Minh Sáng</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f6f9;
+            color:#333;
+            background-image: url("background2.png");
+            background-size: cover;      /* Phủ kín màn hình */
+            background-repeat: no-repeat;/* Không lặp ảnh */
+            background-position: center; /* Căn giữa ảnh */
+
+}   
+        
+
+        .container{
+            max-width:1000px;
+            margin:30px auto;
+            background:white;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 0 15px rgba(0,0,0,0.1);
+            display:flex;
+        }
+
+        .left{
+            width:35%;
+            background:black;
+            color:white;
+            padding:30px;
+        }
+
+        .left img{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            object-fit:cover;
+            display:block;
+            margin:auto;
+            border:5px solid white;
+        }
+
+        .left h1{
+            text-align:center;
+            margin-top:20px;
+        }
+
+        .left p{
+            text-align:center;
+            margin-bottom:20px;
+        }
+
+        .section{
+            margin-top:30px;
+        }
+
+        .section h2{
+            border-bottom:2px solid white;
+            padding-bottom:5px;
+            margin-bottom:10px;
+        }
+
+        .section ul{
+            padding-left:20px;
+        }
+
+        .right{
+            width:65%;
+            padding:30px;
+        }
+
+        .right h2{
+            color:#1e3a5f;
+            border-bottom:2px solid #1e3a5f;
+            margin-bottom:15px;
+            padding-bottom:5px;
+        }
+
+        .item{
+            margin-bottom:20px;
+        }
+
+        .item h3{
+            color:#333;
+        }
+
+        .item span{
+            color:gray;
+            font-size:14px;
+            padding: 10px;
+        }
+        .bank{
+            width: 200px;
+            height: 200px;
+            margin-left: 50px;
+
+        }
+
+        @media(max-width:768px){
+            .container{
+                flex-direction:column;
+            }
+
+            .left,.right{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Cột trái -->
+    <div class="left">
+
+        <!-- Thay avatar.jpg bằng ảnh của bạn -->
+        <img src="anhcv.jpg" alt="Avatar">
+
+        <h1>Nguyễn Minh Sáng</h1>
+        <p></p>
+
+        <div class="section">
+            <h2>Liên hệ</h2>
+            <p>Facebook:<br>facebook.com/minh.sang000</p>
+            <p>Điện thoại:<br>0388508326</p>
+            <p>Địa chỉ:<br>Hưng Yên 2</p>
+        </div>
+    </div>
+    <!-- Cột phải -->
+    <div class="right">
+
+        <h2>Giới thiệu</h2>
+        <div class="item">
+            <p>Minh Sáng từng nói:<br>
+            "Cứ làm đi mới biết mình giỏi đến đâu<br>
+            Cứ cố gắng đi mới biết sức chịu đựng mình đên đâu<br>
+            Cứ thử đi lỡ thành công thì sao"</p>
+        </div>
+
+        <h2>Tiktok</h2>
+        <div class="item">
+            <h3>👨‍✈️Thích Chơi Đồ Cổ✈️</h3>
+            <span>tiktok.com/@minhsang_132</span>
+
+        </div>
+
+
+        <h2>Ngân hàng</h2>
+        <div class="item">
+           <img  class="bank" src="bank.jpg">
+        </div>
+
+        <h2>Mục tiêu tương lai</h2>
+        <div class="item">
+            <p>
+                Hãy trở thành con người "Tinh tế, tử tế, thực tế, kinh tế"
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
